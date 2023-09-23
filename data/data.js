@@ -55,3 +55,14 @@ export const homePageContents = [
     link_url: "#",
   },
 ];
+
+export const footerContents = [
+  {
+    title: "Privacy Policy",
+    link: "#",
+  },
+  {
+    title: "Suppliers",
+    link: "#",
+  },
+];
