@@ -1,8 +1,21 @@
 import "./globals.css";
+import localFont from "next/font/local";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const ddin = localFont({
+  src: [
+    {
+      path: "../public/fonts/D-DIN.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/D-DIN-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "SpaceX Launches",
@@ -16,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={ddin.className}>{children}</body>
     </html>
   );
 }
