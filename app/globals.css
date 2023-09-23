@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .section {
+    @apply py-8;
+  }
   /* Colors */
   .bg-primary {
     @apply bg-black;
@@ -10,5 +13,14 @@
 
   .text-primary {
     @apply text-white;
+  }
+
+  .text-secondary {
+    @apply text-black;
+  }
+
+  /* Heading */
+  .heading-title {
+    @apply text-2xl font-semibold mb-4 tracking-wider;
   }
 }
