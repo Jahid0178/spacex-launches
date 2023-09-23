@@ -7,8 +7,10 @@ const Footer = () => {
     <footer className="py-4 bg-primary text-primary">
       <div className="container">
         <div className="text-center">
-          <p>© {new Date().getFullYear()} SpaceX. All rights reserved.</p>
           <ul className="space-x-4 mt-2">
+            <li className="inline-block">
+              <span>SpaceX © {new Date().getFullYear()}</span>
+            </li>
             {footerContents.map((content, ind) => (
               <li key={ind} className="inline-block">
                 <Link
